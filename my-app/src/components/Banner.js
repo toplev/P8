@@ -1,6 +1,12 @@
+import logo from '../images/LOGO.png'
+import '../styles/Banner.css'
+
 function Banner() {
-	const title = 'La maison jungle'
-	return <h1>{title}</h1>
+	return (
+	<div className='banner'>
+		<img src={logo} alt='Kasa Logo'/>
+	</div>
+	)
 }
 
 export default Banner
