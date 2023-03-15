@@ -1,13 +1,17 @@
+import Header from './Header'
+import Banner from './Banner'
 import RealEstateList from './RealEstateList'
 import { Link } from 'react-router-dom'
 
 
 function App() {
 	return (
-		<nav>
-			<Link to="/App">Banner</Link>
+		<div>
+			<Header />
+			<Link to="/Banner">Banner</Link>
+			<Banner />
 			<RealEstateList />
-		</nav>
+		</div>
 	)
 }
 
