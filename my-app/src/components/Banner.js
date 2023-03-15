@@ -3,6 +3,7 @@ import '../styles/Banner.css'
 
 function Banner() {
 	return (
+		
 	<div className='banner'>
 		<img src={logo} alt='Kasa Logo'/>
 	</div>

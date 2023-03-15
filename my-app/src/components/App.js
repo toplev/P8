@@ -1,13 +1,13 @@
-import Banner from './Banner'
 import RealEstateList from './RealEstateList'
+import { Link } from 'react-router-dom'
 
 
 function App() {
 	return (
-		<div>
-			<Banner />
+		<nav>
+			<Link to="/App">Banner</Link>
 			<RealEstateList />
-		</div>
+		</nav>
 	)
 }
 
