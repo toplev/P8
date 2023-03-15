@@ -1,10 +1,13 @@
 import '../styles/Header.css'
+import logo from '../images/LOGO.png'
+import Banner from '../components/Banner'
 
 function Header() {
 	return (
-		
-	<header>fsddd
-	</header>
+		<header className="header">
+		<img src={logo} alt='Kasa Logo'/>
+		<Banner />
+	  	</header>
 	)
 }
 
