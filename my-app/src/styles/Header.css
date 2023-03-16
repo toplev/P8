@@ -9,6 +9,7 @@
     top: 40px;
     margin: auto;
     justify-content:space-between;
+    margin-top: 20px;
 }  
 
   @media (max-width: 800px) {

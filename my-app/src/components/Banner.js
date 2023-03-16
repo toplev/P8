@@ -4,7 +4,12 @@ import { Link } from 'react-router-dom'
 function Banner() {
 	return (
 		<nav className="banner">
-		<Link to="/Banner">Banner</Link>
+		<li className="space">
+		<Link to="/Banner">Accueil</Link>
+		</li>
+		<li className="space">
+		<Link to="/Banner">A Propos</Link>
+		</li>
 		</nav>
 	)
 }
