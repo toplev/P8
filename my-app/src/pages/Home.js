@@ -1,7 +1,7 @@
 import '../styles/Banner.css'
 import { Link } from 'react-router-dom'
 
-function Banner() {
+function Home() {
 	return (
 		<nav className="banner">
 		<li className="space">
@@ -14,4 +14,4 @@ function Banner() {
 	)
 }
 
-export default Banner
+export default Home
