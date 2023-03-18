@@ -1,0 +1,24 @@
+.linkpage {
+    display: flex;
+    margin: 10px;
+    border: solid 0px red;
+}  
+
+.space {
+  display: flex;
+  margin: 10px;
+  border: solid 0px red;
+}  
+
+.textcolor {
+  font-family: Montserrat;
+  font-size: 24px;
+  color: #FF6060;
+}  
+
+  @media (max-width: 800px) {
+    .header {
+      flex: 100%;
+      border: solid 2px yellow;
+    }
+  }

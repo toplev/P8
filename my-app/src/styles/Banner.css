@@ -1,19 +1,22 @@
-.banner {
+.Banner {
+    width: 80%;
+	border: solid 0px red;
+	border-radius: 10px;
     display: flex;
-    margin: 10px;
-    border: solid 2px red;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 223px;
+    top: 40px;
+    margin: auto;
+    justify-content:space-between;
+    margin-top: 20px;
 }  
-
-.space {
-  display: flex;
-  margin: 10px;
-  border: solid 0px red;
-}  
-
 
   @media (max-width: 800px) {
     .header {
       flex: 100%;
       border: solid 2px yellow;
+
     }
   }
+  

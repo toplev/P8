@@ -1,13 +1,13 @@
-import '../styles/Header.css'
-import logo from '../images/LOGO.png'
 import Banner from '../components/Banner'
+import Header from '../components/Header'
 
-function Header() {
+
+function About() {
 	return (
-		<header className="header">
-		<img src={logo} alt='Kasa Logo'/>
+		<header>
+		<Header />
 		<Banner />
 	  	</header>
 	)
 }
-export default Header
+export default About

@@ -1,12 +1,12 @@
 import '../styles/Header.css'
 import logo from '../images/LOGO.png'
-import Banner from '../components/Banner'
+import LinkPage from './LinkPage'
 
 function Header() {
 	return (
-		<header className="header">
-		<img src={logo} alt='Kasa Logo'/>
-		<Banner />
+		<header className="header"><a href="/Home">
+		<img src={logo} alt='Kasa Logo'/></a>
+		<LinkPage />
 	  	</header>
 	)
 }

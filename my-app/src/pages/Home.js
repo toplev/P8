@@ -1,17 +1,16 @@
-import '../styles/Banner.css'
-import { Link } from 'react-router-dom'
+import Banner from '../components/Banner'
+import Header from '../components/Header'
+import Gallery from '../components/Gallery'
+
+
 
 function Home() {
 	return (
-		<nav className="banner">
-		<li className="space">
-		<Link to="/home">Accueil</Link>
-		</li>
-		<li className="space">
-		<Link to="/about">A Propos</Link>
-		</li>
-		</nav>
+		<header>
+		<Header />
+		<Banner />
+		<Gallery />
+	  	</header>
 	)
 }
-
 export default Home

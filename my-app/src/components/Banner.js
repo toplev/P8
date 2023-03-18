@@ -1,17 +1,11 @@
 import '../styles/Banner.css'
-import { Link } from 'react-router-dom'
+import banner1 from '../images/banner1.png'
 
 function Banner() {
 	return (
-		<nav className="banner">
-		<li className="space">
-		<Link to="/home">Accueil</Link>
-		</li>
-		<li className="space">
-		<Link to="/about">A Propos</Link>
-		</li>
-		</nav>
+		<header>
+		<img src={banner1} alt='Kasa Logo' className="Banner"/>
+	  	</header>
 	)
 }
-
 export default Banner
