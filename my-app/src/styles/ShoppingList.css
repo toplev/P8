@@ -1,9 +1,10 @@
 .lmj-plant-list {
 	list-style-type: none;
-	padding: 32px;
+	padding: 2px;
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 800px;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .lmj-plant-item {

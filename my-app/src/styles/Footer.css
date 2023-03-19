@@ -1,0 +1,34 @@
+.Footer {
+    border: solid 1px black;
+    width: 80%;
+	border-radius: 10px;
+    display: block;
+	height: 150px;
+    top: 40px;
+    margin: auto;
+    background-color: black;
+    margin-bottom: 10px;
+
+}  
+
+.Footerimage {
+    width: 122px;
+	border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 40px;
+    margin: auto;
+    justify-content:space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+
+}  
+
+.Notfoundtext {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    color:  #ffffff;
+}  
