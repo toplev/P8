@@ -1,5 +1,5 @@
 import { aptoList } from '../datas/aptoList'
-import '../styles/ShoppingList.css'
+import '../styles/RealEstateList.css'
 
 function RealEstateList() {
 	const categories = aptoList.reduce(
