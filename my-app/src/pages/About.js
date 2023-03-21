@@ -1,4 +1,4 @@
-import Banner from '../components/Banner'
+import AboutApto from '../components/AboutApto'
 import Header from '../components/Header'
 
 
@@ -6,7 +6,7 @@ function About() {
 	return (
 		<header>
 		<Header />
-		<Banner />
+		<AboutApto />
 	  	</header>
 	)
 }
