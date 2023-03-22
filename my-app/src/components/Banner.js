@@ -1,6 +1,7 @@
 import '../styles/Banner.css'
 import banner1 from '../images/banner1.png'
 
+
 function Banner() {
 	return (
 		<header>
