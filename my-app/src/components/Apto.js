@@ -1,23 +1,20 @@
 import { aptoList } from '../datas/aptoList'
 import { useParams } from "react-router-dom";
 
-function RealEstateListone() {
-
-	let { id } = useParams();
+const Service = () => {
+	const idinlist = useParams ('id').id;
+	console.log(idinlist)
+	const idnow = aptoList.filter(data => data.id === idinlist)
 
 	return (
 		<div>
-			<h3>ID: {id}</h3>
 			<ul className='lmj-plant-list'>
-				{aptoList.map((id, title, cover, pictures, description, host, rating, location, equipments, tags) => (
-					<div key={id}>
-					<div>{id.title}</div>
-				</div>
-				))}
+			<img src={idnow[0].cover} alt='Kasa Logo' className="apto-img"/>
+			<h3>{idnow[0].title}</h3>
 			</ul>
 		</div>
 	)
 }
 
-export default RealEstateListone
+export default Service
 

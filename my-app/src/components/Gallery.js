@@ -7,7 +7,7 @@ function Gallery() {
 			<div className='gallerybackgroud'>
 				{aptoList.map((apto) => (
 					<div key={apto.id} className='apto-list'>
-						<Link to={apto.id}><img src={apto.cover} alt='Kasa Logo' className="apto-img"/></Link>
+						<Link to={`/Apto/${apto.id}`}><img src={apto.cover} alt='Kasa Logo' className="apto-img"/></Link>
 						<div className='Gallery2'>{apto.title}</div>
 					</div>
 				))}
