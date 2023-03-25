@@ -1,7 +1,6 @@
 .gallerybackgroud {
     width: 80%;
 	background-color: #F7F7F7;
-	border: solid 0px red;
 	border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +10,8 @@
     margin: auto;
     justify-content:space-between;
     margin-top: 20px;
+	margin-bottom: 20px;
+
 }  
 
 .Gallery2 {
@@ -26,30 +27,32 @@
 	
 } 
 
-.apto-img {
-	border: solid 0px black;
-	border-radius: 10px;
-	height: 340px;
-	width: 340px;
-	margin: 10px;
+.apto-list {
+	margin: 20px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	flex-direction: column;
 	position: relative;
-	opacity: 1.6;
+	border-radius: 10px;
+
 }
 
-.apto-list {
+.apto-list::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 30%;
+	border-radius: 10px;
+	background-image: linear-gradient(to bottom, transparent, #000000);
+  }
+
+  .gradient-img {
 	height: 340px;
 	width: 340px;
-	margin: 10px;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	position: relative;
-	
-}
+	border-radius: 10px;
+  }
 
   @media (max-width: 800px) {
     .header {
