@@ -1,7 +1,29 @@
-.lmj-plant-list {
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    position: relative;
+}
+
+.infoleft {
     display: flex;
     width: 80%;
-    border: solid 0px red;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.inforight {
+    display: flex;
+    width: 20%;
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 40px;
+}
+
+.aptolist {
+    display: flex;
+    width: 80%;
     flex-wrap: wrap;
     flex-direction: row;
     height: 415px;;
@@ -21,11 +43,9 @@
 width: 64px;
 height: 64px;
 border-radius: 30px;
-
 }
 
 .apto-text {
-border: solid 0px red;
 width: 100%;
 position: relative;
 font-family: 'Montserrat';
@@ -42,18 +62,28 @@ color: #FF6060;
     font-family: 'Montserrat';
     font-size: 18px;
     color: #FF6060;
+    display: flex;
     }
 
-    .button-text2 {
+    .apto-text3 {
         font-family: 'Montserrat';
-        font-size: 14px;
-        background: #FF6060;
-        width: 150px;
-        height: 25px;
-        border-radius: 10px;
-        color: white;
-        font-weight: 500;
+        font-size: 18px;
+        color: #FF6060;
+        margin-right: 10px;
         }
+
+.button-text2 {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    background: #FF6060;
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    margin-right: 10px;
+}
 
 .star-rating {
         font-size: 2rem;
