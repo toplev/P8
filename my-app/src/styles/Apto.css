@@ -1,36 +1,39 @@
-.info {
-    display: flex;
-    flex-wrap: wrap;
-    margin: auto;
-    position: relative;
-}
-
-.infoleft {
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
-}
-
-.inforight {
-    display: flex;
-    width: 20%;
-    flex-wrap: wrap;
-    position: relative;
-    margin-top: 40px;
-}
-
 .aptolist {
-    display: flex;
     width: 80%;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 415px;;
+    height: 800px;;
     top: 40px;
     margin-top: 20px;
     margin: auto;
     position: relative;
+}
+
+
+.flexbox-containter{
+    display: flex;
+    justify-content: space-between;
+    }
+
+.flexbox-containter1{
+display: flex;
+justify-content: space-between;
+}
+
+.flexbox-containter2 {
+display: flex;
+flex-direction: column;
+}
+
+.flexbox-containter3 {
+display: flex;
+flex-direction: row;
+margin-top: 80px;
+}
+
+.flexbox-containter4 {
+display: flex;
+flex-direction: row;    
 }
 
 .apto-img {
@@ -43,6 +46,7 @@
 width: 64px;
 height: 64px;
 border-radius: 30px;
+
 }
 
 .apto-text {
@@ -65,12 +69,14 @@ color: #FF6060;
     display: flex;
     }
 
-    .apto-text3 {
-        font-family: 'Montserrat';
-        font-size: 18px;
-        color: #FF6060;
-        margin-right: 10px;
-        }
+.apto-text3 {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #FF6060;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    }
 
 .button-text2 {
     font-family: 'Montserrat';
