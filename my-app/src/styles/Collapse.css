@@ -14,3 +14,42 @@
 .button {
    align-items: center;
  }
+
+ .collapseinfo {
+	color: white;
+	background-color: #31b572;
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 200px;
+    margin: auto;
+}
+
+.collapsebutton {
+	color: white;
+	background-color: #31b572;
+	padding: 32px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+    margin: auto;
+}
+
+.arrow {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 24px;
+	height: 24px;
+	color: white;
+  }
+
+.arrow_up {
+	color: white;
+  }
+
+.arrow_down {
+	color: red;
+}

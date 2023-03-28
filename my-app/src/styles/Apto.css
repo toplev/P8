@@ -2,13 +2,13 @@
     width: 80%;
     flex-wrap: wrap;
     flex-direction: row;
-    height: 800px;;
+    height: 1000px;;
     top: 40px;
     margin-top: 20px;
     margin: auto;
     position: relative;
-}
 
+}
 
 .flexbox-containter{
     display: flex;
@@ -18,23 +18,33 @@
 .flexbox-containter1{
 display: flex;
 justify-content: space-between;
+
 }
 
 .flexbox-containter2 {
 display: flex;
 flex-direction: column;
+
 }
 
 .flexbox-containter3 {
 display: flex;
 flex-direction: row;
 margin-top: 80px;
+
 }
 
 .flexbox-containter4 {
 display: flex;
 flex-direction: row;    
+
 }
+
+.flexbox-containter5 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    }
 
 .apto-img {
     width: 100%;

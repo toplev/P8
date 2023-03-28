@@ -1,6 +1,8 @@
 import '../styles/Apto.css'
 import { aptoList } from '../datas/aptoList'
 import { useParams } from "react-router-dom";
+import Collapse from '../components/Collapse';
+
 
 function Service () {
 	const idinlist = useParams ('id').id;
@@ -34,6 +36,7 @@ function Service () {
 			 </div>		
 			</div>
 			</div>
+			<div className='flexbox-containter5'><Collapse /><Collapse /></div>
 			</div>
 	)
 }

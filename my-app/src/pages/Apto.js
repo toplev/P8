@@ -1,6 +1,5 @@
 import Apto from'../components/Apto'
 import Header from '../components/Header'
-import Collapse from "../components/Collapse";
 import Footer from '../components/Footer'
 
 function Aptoid() {
@@ -8,7 +7,6 @@ function Aptoid() {
 		<header>
 		<Header />
 		<Apto />
-		<Collapse />
 		<Footer />
 	  	</header>
 	)
