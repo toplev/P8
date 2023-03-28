@@ -1,0 +1,16 @@
+.main {
+   display: flex;
+   border: solid 1px black;
+    width: 80%;
+	border-radius: 10px;
+    display: block;
+	height: 150px;
+    top: 40px;
+    margin: auto;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.button {
+   align-items: center;
+ }
