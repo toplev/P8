@@ -15,6 +15,27 @@
    align-items: center;
  }
 
+ .btn {
+	color: white;
+	background-color: #31b572;
+	padding: 32px;
+	display: flex;
+	width: 100%;
+	background-color: red;
+	display: flex;
+  }
+ .btn.active {
+	color: white;
+	background-color: #31b572;
+	padding: 32px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 100%;
+    margin: auto;
+	background-color: #31b572;
+  }
+
  .collapseinfo {
 	color: white;
 	background-color: #31b572;
@@ -39,17 +60,16 @@
 
 .arrow {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
 	width: 24px;
 	height: 24px;
 	color: white;
+	margin-left: 20px;
   }
 
 .arrow_up {
-	color: white;
+	transform: rotate(0deg);
   }
 
 .arrow_down {
-	color: red;
+	transform: rotate(180deg);
 }

@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { aptoList } from '../datas/aptoList'
 import { useParams } from "react-router-dom";
 import arrow from "../images/arrow.png";
+import Button from "../components/Button"
 
 
 function Product(){
@@ -16,9 +17,11 @@ function Product(){
             <h2>{idnow[0].description}</h2>
         </div>
     ) : (
+        <div>        
+        <Button />
         <button onClick={() => setIsOpen(true)} className='collapsebutton'>Description<img className={isOpen ? 'arrow arrow_up' : 'arrow arrow_down'} src={arrow} alt="showmore"/></button>
-    )
+        </div>
+        )
 }
-
 export default Product
     

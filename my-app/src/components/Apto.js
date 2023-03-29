@@ -36,7 +36,7 @@ function Service () {
 			 </div>		
 			</div>
 			</div>
-			<div className='flexbox-containter5'><Collapse /><Collapse /></div>
+			<div className='flexbox-containter5'><Collapse /></div>
 			</div>
 	)
 }
