@@ -22,13 +22,13 @@ function Service () {
 			<img src={idnow[0].cover} alt='Kasa Logo' className="apto-img"/>
 			<div className='flexbox-containter1'>
 			<div>
-			<h3 className="apto-text">{idnow[0].title}</h3>
-			<h1 className="apto-text2">{idnow[0].location}</h1>
+			<span className="apto-text">{idnow[0].title}</span>
+			<span className="apto-text2">{idnow[0].location}</span>
 			<div>{idnow[0].tags.map((tag, index) => (<button key={index}className="button-text2">{tag}</button>))}</div>
 			</div>
 			<div className='flexbox-containter2'>	
-			<div className='flexbox-containter3'>
-			<h1 className="apto-text3">{idnow[0].host.name}</h1>
+			<div className='flexbox-containter'>
+			<span className="apto-text3">{idnow[0].host.name}</span>
 			<img src={idnow[0].host.picture} alt='Kasa Logo' className="apto-img2"/>
 			</div>	
 			<div className='flexbox-containter4'>{getStarRating().map((star, index) => (

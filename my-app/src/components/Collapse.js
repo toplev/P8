@@ -1,27 +1,15 @@
 import '../styles/Collapse.css'
-import { useState } from 'react'
-import { aptoList } from '../datas/aptoList'
-import { useParams } from "react-router-dom";
-import arrow from "../images/arrow.png";
-import Button from "../components/Button"
+import ButtonDescription from "./ButtonDescription"
+import ButtonEquipment from "./ButtonEquipment"
 
 
-function Product(){
-    const idinlist = useParams ('id').id;
-	const idnow = aptoList.filter(data => data.id === idinlist)
-    const [isOpen, setIsOpen] = useState(false);
-
-    return isOpen ? (
-        <div className='collapseinfo'>
-            <button onClick={() => setIsOpen(false)}>Fermer</button>
-            <h2>{idnow[0].description}</h2>
+function Collapse(){
+    return (
+        <div className='wrapper6'>
+        <ButtonDescription />
+        <ButtonEquipment />
         </div>
-    ) : (
-        <div>        
-        <Button />
-        <button onClick={() => setIsOpen(true)} className='collapsebutton'>Description<img className={isOpen ? 'arrow arrow_up' : 'arrow arrow_down'} src={arrow} alt="showmore"/></button>
-        </div>
-        )
+	)
 }
-export default Product
+export default Collapse
     
