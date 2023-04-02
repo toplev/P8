@@ -1,25 +1,31 @@
-import '../styles/Banner.css'
-import { useParams } from "react-router-dom";
-import banner1 from '../images/banner1.png'
-import { useEffect } from 'react'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import banner1 from '../images/banner1.png';
+import banner2 from '../images/banner2.png';
+import '../styles/Banner.css';
 
 function Banner() {
-	const idinlist = useParams ('/Home');
-	console.log(idinlist)
+  const location = useLocation();
 
-	useEffect(() => {
-		if (idinlist === '/Home')
-		console.log(useEffect)
-		console.log('alert')
-	},)
+  useEffect(() => {
+    if (location.pathname === '/about') {
+      console.log('About page is open');
+    } else if (location.pathname === '/Home') {
+      console.log('Home page is open');
+    }
+  }, [location.pathname]);
 
-	return (
-		<header>
-		<div className="Banner">
-		<img src={banner1} alt='Kasa Logo' className="img"/></div>
-		<p className='text'>Chez vous, partout et ailleurs</p>
-	  	</header>
-	)
+  const bannerImage = location.pathname === '/about' ? banner2 : banner1;
+  const Text = location.pathname === '/about' ? '' : 'Chez vous, partout et ailleurs';
+
+  return (
+    <header>
+      <div className="Banner">
+        <img src={bannerImage} alt='Logo Kasa' className="img" />
+		<p className='text'>{Text}</p>
+      </div>
+    </header>
+  );
 }
-export default Banner
 
+export default Banner;

@@ -14,7 +14,12 @@
   font-family: Montserrat;
   font-size: 24px;
   color: #FF6060;
+  text-decoration: none;
 }  
+
+.active {
+  border-bottom: 2px solid #FF6060;
+}
 
   @media (max-width: 800px) {
     .header {

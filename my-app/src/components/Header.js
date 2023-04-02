@@ -4,7 +4,7 @@ import LinkPage from './LinkPage'
 
 function Header() {
 	return (
-		<header className="header"><a href="/Home">
+		<header className="header"><a href="/home">
 		<img src={logo} alt='Kasa Logo'/></a>
 		<LinkPage />
 	  	</header>

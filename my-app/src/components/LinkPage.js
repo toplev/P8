@@ -1,14 +1,14 @@
 import '../styles/LinkPage.css'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function LinkPage() {
 	return (
 		<nav className="linkpage">
 		<li className="space">
-		<Link to="/home" className="textcolor">Accueil</Link>
+		<NavLink exact to="/home" activeClassName="active" className="textcolor">Accueil</NavLink>
 		</li>
 		<li className="space">
-		<Link to="/about" className="textcolor">A Propos</Link>
+		<NavLink exact to="/about" activeClassName="active" className="textcolor">A Propos</NavLink>
 		</li>
 		</nav>
 	)

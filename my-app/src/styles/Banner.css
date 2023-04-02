@@ -6,24 +6,23 @@
     flex-wrap: wrap;
     flex-direction: row;
     height: 170px;
-    top: 40px;
     margin: auto;
     justify-content:space-between;
     margin-top: 20px;
     background: black;
+    position: relative;
     }  
 
 .text {
   position: absolute;
-  left: 30%;
-  right: 25%;
-  top: 18%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-family: 'Montserrat';
-  font-size: 40px;
-  line-height: 142.6%;
-  display: flex;
-  align-items: flex-end;
+  font-size: 35px;
   color: #FFFFFF;
+  text-align: center;
+  margin: 0;
 }
 
 .img {
