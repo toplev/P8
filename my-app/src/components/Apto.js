@@ -2,7 +2,7 @@ import '../styles/Apto.css'
 import { aptoList } from '../datas/aptoList'
 import { useParams } from "react-router-dom";
 import Collapse from '../components/Collapse';
-
+import ImageSlider from '../components/ImageSlider';
 
 function Service () {
 	const idinlist = useParams ('id').id;
@@ -19,7 +19,7 @@ function Service () {
 
 	return (
 			<div className='aptolist'>
-			<img src={idnow[0].cover} alt='Kasa Logo' className="apto-img"/>
+			<ImageSlider />
 			<div className='flexbox-containter1'>
 			<div>
 			<span className="apto-text">{idnow[0].title}</span>
