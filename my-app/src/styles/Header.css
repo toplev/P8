@@ -29,7 +29,6 @@
   flex-direction: row;
   width: 30%;
   margin: 10px;
-  border: solid 0px red;
 }
 
 @media (max-width: 480px) {

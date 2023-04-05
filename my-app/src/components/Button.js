@@ -26,7 +26,7 @@ function Button() {
           {btnStates[index] && (
             <div className="accordion">
               <ul>
-                <div className="content">{about.about.info}</div>
+                <div>{about.about.info}</div>
               </ul>
             </div>
           )}

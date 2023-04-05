@@ -19,7 +19,7 @@
 }  
 
 .active {
-  border-bottom: 2px solid #FF6060;
+  border-bottom: 0px solid #FF6060;
 }
 
 @media (max-width: 700px) {
