@@ -11,7 +11,6 @@
     justify-content:space-between;
     margin-top: 20px;
 	margin-bottom: 20px;
-
 }  
 
 .Gallery2 {
@@ -24,7 +23,6 @@
     flex-wrap: wrap;
 	font-weight: 600;
 	font-size: 18px;
-	
 } 
 
 .apto-list {
@@ -34,7 +32,6 @@
 	flex-direction: column;
 	position: relative;
 	border-radius: 10px;
-
 }
 
 .apto-list::before {
@@ -63,21 +60,21 @@
   @media (max-width: 280px) {
     .gallerybackgroud {
 		display: flex;
-		width: 280px;
-		margin: auto;
-		margin-left: 40px;
+		width: 230px;
+		margin-left: 35px;
 		margin-top: 10px;
+		width: 80%;
 	}  
 
 	.gradient-img {
-		height: 250px;
-		width: 250px;
+		height: 200px;
+		width: 200px;
 		border-radius: 10px;
 	  }
 
 	.Gallery2 {
 		display: flex;
-		margin-top: 180px;
+		margin-top: 110px;
 	} 
   }
   

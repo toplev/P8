@@ -34,7 +34,7 @@
 @media (max-width: 280px) {
     .Footer {
         display: flex;
-		width: 280px;
+		width: 220px;
 		margin: auto;
 		margin-left: 40px;
 		margin-top: 10px;

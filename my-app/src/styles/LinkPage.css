@@ -1,45 +1,37 @@
 .linkpage {
     display: flex;
     margin: 10px;
-    border: solid 0px red;
-    flex-direction: row;
 }  
 
 .space {
   display: flex;
   margin: 10px;
-  border: solid 0px red;
 }  
 
 .textcolor {
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 20px;
   color: #FF6060;
   text-decoration: none;
 }  
 
 .active {
-  border-bottom: 0px solid #FF6060;
+  border-bottom: 1px solid #FF6060;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
+
+  .linkpage {
+    margin-right: 60px;
+} 
+
   .textcolor {
     display: flex;
-    font-size: 12px;
-    border: solid 0px red;
+    font-size: 10px;
+
   }
 
   .space {
-    display: flex;
-    margin: 2px;
-    border: solid 0px red;
+    margin: 8px;
   }  
-}
-
-@media (max-width: 280px) {
-  .textcolor {
-    font-size: 17px;
-    margin-top: 10px;
-    margin-right: 5px;
-  }
 }
