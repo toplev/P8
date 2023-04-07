@@ -1,13 +1,10 @@
 import '../styles/Collapse.css'
-import ButtonDescription from "./ButtonDescription"
-import ButtonEquipment from "./ButtonEquipment"
-
+import Text from "../components/Text"
 
 function Collapse(){
     return (
         <div className='wrapper6'>
-        <ButtonDescription />
-        <ButtonEquipment />
+        <Text />
         </div>
 	)
 }
