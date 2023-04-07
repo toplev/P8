@@ -21,17 +21,12 @@
 
 @media (max-width: 500px) {
 
-  .linkpage {
-    margin-right: 60px;
-} 
-
   .textcolor {
     display: flex;
     font-size: 10px;
-
   }
 
   .space {
-    margin: 8px;
+    margin: 5px;
   }  
 }

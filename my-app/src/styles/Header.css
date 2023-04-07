@@ -6,6 +6,7 @@
     margin: auto;
     justify-content:space-between;
     margin-top: 20px;
+    border: solid 0px red;
 }  
 
 .logo {
@@ -16,14 +17,11 @@
   @media (max-width: 450px) {
     .header {
       flex: 100%;
-      width: 320px;
-      margin-left: 20px;
     }
     
     .logo {
       display: flex;
-      width: 100px;
-      margin: 10px;
+      width: 75px;
     }
   }
   

@@ -232,10 +232,10 @@ margin-bottom: 40px;}
 	border-radius: 10px;
 }
 
-@media (max-width: 280px) {
+@media (max-width: 450px) {
 	.aboutmain {
 		display: flex;
-		width: 280px;
+		width: 80%;
 		margin: auto;
 		margin-left: 40px;
 		margin-top: 10px;
@@ -243,7 +243,7 @@ margin-bottom: 40px;}
 
 	 .title {
 		display: flex;
-		width: 270px;
+		width: 200px;
 	}
 
 	.accordion{
