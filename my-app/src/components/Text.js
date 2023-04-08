@@ -6,36 +6,50 @@ import { useParams } from "react-router-dom";
 
 function Text2() {
   const idinlist = useParams ('id').id;
-	const idnow = aptoList.filter(data => data.id === idinlist)
-  const [btnStates, setBtnStates] = useState(new Array(idnow.length).fill(false));
+  const idnow = aptoList.filter(data => data.id === idinlist)
+  const [descriptionState, setDescriptionState] = useState(false);
+  const [equipmentState, setEquipmentState] = useState(false);
 
-  function handeClick(index) {
-    setBtnStates(prevState => {
-      const newBtnStates = [...prevState];
-      newBtnStates[index] = !newBtnStates[index];
-      return newBtnStates;
-    });
+  function toggleDescription() {
+    setDescriptionState(prevState => !prevState);
+  }
+
+  function toggleEquipment() {
+    setEquipmentState(prevState => !prevState);
   }
 
   return (
     <div className="aboutmain2">
-      {idnow.map((text, index) => (
-        <div className="aboutmenu2" key={text.id}>
-          <div className={`title2${btnStates[index] ? ' active' : ''}`} onClick={() => handeClick(index)}>
-            <div className="title2">Description</div>
-            <div className="title2">Equipments</div>
-            <span><img className={btnStates[index] ? 'arrow arrow_up' : 'arrow arrow_down'} src={arrow} alt="showmore"/></span>
-          </div>
-          {btnStates[index] && (
-            <div className="accordion">
-              <ul>
-                <div>{idnow[0].description}</div>
-                <div>{idnow[0].equipments}</div>
-              </ul>
-            </div>
-          )}
+      <div className="aboutmenu2">
+        <div className={`title2${descriptionState ? ' active' : ''}`} onClick={toggleDescription}>
+          <div className="title2">Description</div>
+          <span><img className={descriptionState ? 'arrow arrow_up' : 'arrow arrow_down'} src={arrow} alt="showmore"/></span>
         </div>
-      ))}
+        {descriptionState && (
+          <div className="accordion">
+            <div className="accordion-section">
+              <div>{idnow[0].description}</div>
+            </div>
+          </div>
+        )}
+      </div>
+      <div className="aboutmenu2">
+        <div className={`title2${equipmentState ? ' active' : ''}`} onClick={toggleEquipment}>
+          <div className="title2">Equipment</div>
+          <span><img className={equipmentState ? 'arrow arrow_up' : 'arrow arrow_down'} src={arrow} alt="showmore"/></span>
+        </div>
+        {equipmentState && (
+          <div className="accordion">
+            <div className="accordion-section">
+            <ul>
+                  {idnow[0].equipments.map((equip, index) => (
+                    <li key={index}>{equip}</li>
+                  ))}
+                </ul>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
