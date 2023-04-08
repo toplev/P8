@@ -1,10 +1,12 @@
 import '../styles/Collapse.css'
 import { useState } from 'react'
 import arrow from "../images/arrow.png";
-import { text } from '../datas/text'
+import { aptoList } from '../datas/aptoList'
+import { useParams } from "react-router-dom";
 
 function Text2() {
-  const idnow = text.filter(data => data.id)
+  const idinlist = useParams ('id').id;
+	const idnow = aptoList.filter(data => data.id === idinlist)
   const [btnStates, setBtnStates] = useState(new Array(idnow.length).fill(false));
 
   function handeClick(index) {
@@ -20,13 +22,15 @@ function Text2() {
       {idnow.map((text, index) => (
         <div className="aboutmenu2" key={text.id}>
           <div className={`title2${btnStates[index] ? ' active' : ''}`} onClick={() => handeClick(index)}>
-            <div className="title2">{text.about.title}</div>
+            <div className="title2">Description</div>
+            <div className="title2">Equipments</div>
             <span><img className={btnStates[index] ? 'arrow arrow_up' : 'arrow arrow_down'} src={arrow} alt="showmore"/></span>
           </div>
           {btnStates[index] && (
             <div className="accordion">
               <ul>
-                <div>{text.about.info}</div>
+                <div>{idnow[0].description}</div>
+                <div>{idnow[0].equipments}</div>
               </ul>
             </div>
           )}

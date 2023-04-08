@@ -271,7 +271,7 @@ margin-bottom: 40px;
 	border-radius: 10px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
 	.aboutmain {
 		display: flex;
 		width: 80%;
@@ -297,7 +297,7 @@ margin-bottom: 40px;
 
 	.accordion{
 		display:flex;
-		width: 95%;
+		width: 97%;
 		height: 80%;
 		margin-bottom: 20px;
 	}

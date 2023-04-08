@@ -3,8 +3,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     height: 1200px;
-    top: 40px;
-    margin-top: 20px;
+    top: 0px;
+    margin-top: 0px;
     margin: auto;
     position: relative;
 }
@@ -23,7 +23,7 @@ justify-content: space-between;
 .flexbox-containter2 {
 display: flex;
 flex-direction: column;
-border: 1px solid red;
+border: 0px solid red;
 }
 
 .flexbox-containter3 {
@@ -111,7 +111,7 @@ margin-bottom: 10px;
       }
 
 
-      @media (max-width: 450px) {
+      @media (max-width: 500px) {
         .flexbox-containter1 {
             display: flex;
             flex-direction: column;
@@ -119,6 +119,15 @@ margin-bottom: 10px;
             }
 
             .aptolist {
-                height: 1600px;
+                height: 1100px;
             }
+
+            .flexbox-containter2 {
+                flex-direction:row-reverse;
+                }
+
+                .flexbox-containter4 {
+                    margin-top: auto;
+                    margin: auto;
+                    }
       }
