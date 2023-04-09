@@ -1,17 +1,17 @@
-import Apto from'../components/Apto'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import NotFound from '../components/NotFound'
+import Apto from '../components/Apto';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function Aptoid() {
-	const isNotFound = false; // change this value to test whether Footer appears in Not Found component
+  const showFooter = false;
 
-	return (
-		<header>
-			<Header />
-			{isNotFound ? <NotFound /> : <Apto />}
-			{isNotFound && <Footer />}
-		</header>
-	)
+  return (
+    <header>
+      <Header />
+      <Apto />
+      {showFooter ? <Footer /> : null}
+    </header>
+  );
 }
-export default Aptoid
+
+export default Aptoid;
