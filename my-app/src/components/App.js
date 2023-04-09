@@ -3,7 +3,6 @@ import About from '../pages/About'
 import Apto from '../pages/Apto'
 import NotFound from '../pages/NotFound'
 
-
 import {Routes, Route} from "react-router-dom"
 
 function App() {

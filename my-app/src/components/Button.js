@@ -24,7 +24,7 @@ function Button() {
             <span><img className={btnStates[index] ? 'arrow arrow_up' : 'arrow arrow_down'} src={arrow} alt="showmore"/></span>
           </div>
           {btnStates[index] && (
-            <div className="accordion">
+            <div className="accordion2">
               <ul>
                 <div>{about.about.info}</div>
               </ul>
