@@ -17,15 +17,24 @@
 
 .NotFoundText {
     display: block;
-    font-size: 28px;
+    font-size: 18px;
     text-align: center;
     color:  #FF6060;
 }  
 
 .NotFoundTextRetour {
     display: block;
-    font-size: 28px;
+    font-size: 18px;
     text-align: center;
     margin-top: 5cm;
     color:  #FF6060;
 }  
+
+@media (max-width: 500px) {
+
+    .NotFound404 {
+        margin-top: 20px;
+        font-size: 100px;
+    }  
+
+}

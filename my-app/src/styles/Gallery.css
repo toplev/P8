@@ -9,20 +9,24 @@
     top: 40px;
     margin: auto;
     justify-content:space-between;
-    margin-top: 20px;
+    margin-top: 15px;
 	margin-bottom: 20px;
 }  
 
 .Gallery2 {
+	position: absolute;
+	left: 5.88%;
+	right: 5.88%;
+	top: 78.82%;
+	bottom: 5.88%;
 	font-family: 'Montserrat';
 	font-style: normal;
-	position: absolute;
-	margin-top: 80%;
-    width: 90%;
-	color:white;
-    flex-wrap: wrap;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 18px;
+	line-height: 142.6%;
+	display: flex;
+	align-items: flex-end;
+	color: #FFFFFF;
 } 
 
 .apto-list {
@@ -32,7 +36,7 @@
 	flex-direction: column;
 	position: relative;
 	border-radius: 10px;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .apto-list::before {
@@ -52,26 +56,18 @@
 	border-radius: 10px;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     .gallerybackgroud {
 		display: flex;
-		width: 230px;
-		margin-left: 35px;
-		margin-top: 10px;
-		width: 80%;
-		background-color: none;
+		background-color: white;
+		margin-top: 5px;
 
 	}  
 
 	.gradient-img {
-		height: 200px;
-		width: 200px;
+		width: 100%;
+		height: 250px;
 		border-radius: 10px;
 	  }
-
-	.Gallery2 {
-		display: flex;
-		margin-top: 110px;
-	} 
   }
   

@@ -4,15 +4,45 @@
 	border-radius: 10px;
   height: 170px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   background: black;
   position: relative;
-  }  
+  }
+
+  .Banner2 {
+    display: flex;
+    width: 80%;
+    border-radius: 10px;
+    height: 170px;
+    margin: auto;
+    margin-top: 10px;
+    background: black;
+    position: relative;
+    }  
+
+    .Banner3 {
+      display: none;
+      width: 80%;
+      margin: auto;
+      border-radius: 10px;
+      }
+
+      .Banner4 {
+        display: none;
+        width: 80%;
+        margin: auto;
+        border-radius: 10px;
+        }
 
   .img {
       width: 100%;
       border-radius: 10px;
       opacity: .6  
+    }
+
+  .img2 {
+      width: 100%;
+      border-radius: 10px
     }
 
 .text {
@@ -27,17 +57,34 @@
   margin: 0;
 }
 
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     .Banner {
       display: flex;
-      margin: auto;
-      margin-left: 40px;
-      margin-top: 20px;
-
+      height: 70px;
     }  
 
     .text {
-      font-size: 20px;
+    display: flex;
+    width: 60%;
+    font-size: 15px;
+    text-align:start
     }
+
+    .img2 {
+      display: flex;
+      object-fit: contain;
+    }
+    
+    .Banner2 {   
+      display: none;
+
+  } 
+  .Banner3 {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    }
+    
   }
   

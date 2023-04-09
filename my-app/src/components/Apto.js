@@ -1,3 +1,4 @@
+import NotFound from '../components/NotFound'
 import '../styles/Apto.css'
 import { aptoList } from '../datas/aptoList'
 import { useParams } from "react-router-dom";
@@ -7,6 +8,9 @@ import ImageSlider from '../components/ImageSlider';
 function Service () {
 	const idinlist = useParams ('id').id;
 	const idnow = aptoList.filter(data => data.id === idinlist)
+	if (idnow.length === 0) {
+		return <NotFound />;
+	  }
 	const fullStars = parseInt(idnow[0].rating);
 	const emptyStars = 5 - fullStars;
 

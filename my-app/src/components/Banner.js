@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import banner1 from '../images/banner1.png';
 import banner2 from '../images/banner2.png';
+import banner3 from '../images/banner3.png';
+
 import '../styles/Banner.css';
 
 function Banner() {
@@ -10,7 +12,7 @@ function Banner() {
   useEffect(() => {
     if (location.pathname === '/about') {
       console.log('About page is open');
-    } else if (location.pathname === '/Home') {
+    } else if (location.pathname === '/home') {
       console.log('Home page is open');
     }
   }, [location.pathname]);
@@ -20,8 +22,9 @@ function Banner() {
 
   return (
     <header>
-      <div className="Banner">
-        <img src={bannerImage} alt='Logo Kasa' className="img" />
+      <img src={banner3} alt='Logo Kasa' className={location.pathname === '/about' ? 'Banner3' : 'Banner4'} />
+      <div className={location.pathname === '/about' ? 'Banner2' : 'Banner'}>
+        <img src={bannerImage} alt='Logo Kasa' className={location.pathname === '/about' ? 'img2' : 'img'} />
 		<p className='text'>{Text}</p>
       </div>
     </header>
@@ -29,3 +32,4 @@ function Banner() {
 }
 
 export default Banner;
+

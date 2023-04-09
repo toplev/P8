@@ -1,7 +1,6 @@
 .Footer {
     border: solid 1px black;
     width: 80%;
-	border-radius: 10px;
     display: block;
 	height: 150px;
     top: 40px;
@@ -49,12 +48,16 @@
   @media (max-width: 280px) {
     .Footer {
         display: block;
-		max-width: 90%;
+		width: 100%;
 		margin-top: 10px;
         flex-direction:column;
     } 
 
     .Footerimage {
         margin-bottom: 0px;
+    } 
+
+    .footertext {
+        font-size: 15px;
     } 
   }  
