@@ -1,7 +1,7 @@
-import "../styles/Collapse.css"
-import { useState } from "react"
-import arrow from "../images/arrow.png"
-import { about } from "../datas/about"
+import '../styles/Collapse.css'
+import { useState } from 'react'
+import arrow from '../images/arrow.png'
+import { about } from '../datas/about'
 
 function Button() {
   const idnow = about.filter((data) => data.id)
@@ -23,14 +23,14 @@ function Button() {
       {idnow.map((about, index) => (
         <div className="aboutmenu" key={about.id}>
           <div
-            className={`title${btnStates[index] ? " active" : ""}`}
+            className={`title${btnStates[index] ? ' active' : ''}`}
             onClick={() => handeClick(index)}
           >
             <div className="title">{about.about.title}</div>
             <span>
               <img
                 className={
-                  btnStates[index] ? "arrow arrow_up" : "arrow arrow_down"
+                  btnStates[index] ? 'arrow arrow_up' : 'arrow arrow_down'
                 }
                 src={arrow}
                 alt="showmore"

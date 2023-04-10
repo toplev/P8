@@ -1,18 +1,18 @@
-import "../styles/ImageSlider.css"
-import { aptoList } from "../datas/aptoList"
-import { useParams } from "react-router-dom"
-import { useState } from "react"
-import vectorleft from "../images/vectorleft.png"
-import vectorright from "../images/vectorright.png"
+import '../styles/ImageSlider.css'
+import { aptoList } from '../datas/aptoList'
+import { useParams } from 'react-router-dom'
+import { useState } from 'react'
+import vectorleft from '../images/vectorleft.png'
+import vectorright from '../images/vectorright.png'
 
 function Slider({ apto }) {
-  const idinlist = useParams("id").id
+  const idinlist = useParams('id').id
   const idnow = aptoList.filter((data) => data.id === idinlist)
   const [current, setCurrent] = useState(0)
   const length = idnow[0].pictures.length
   const showArrows = length > 1
 
-  // && showArrows true or false 
+  // && showArrows true or false
   return (
     <div className="slider">
       {idnow.map((apto) => (
