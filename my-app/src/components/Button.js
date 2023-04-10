@@ -9,7 +9,7 @@ function Button() {
     new Array(idnow.length).fill(false)
   )
 
-  // button true or false
+  // button true or false avec spread operator
   function handeClick(index) {
     setBtnStates((prevState) => {
       const newBtnStates = [...prevState]
