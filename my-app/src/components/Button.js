@@ -9,6 +9,7 @@ function Button() {
     new Array(idnow.length).fill(false)
   )
 
+  // button true or false
   function handeClick(index) {
     setBtnStates((prevState) => {
       const newBtnStates = [...prevState]

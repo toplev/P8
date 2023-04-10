@@ -10,6 +10,7 @@ function Text2() {
   const [descriptionState, setDescriptionState] = useState(false)
   const [equipmentState, setEquipmentState] = useState(false)
 
+// toogle True or False
   function toggleDescription() {
     setDescriptionState((prevState) => !prevState)
   }

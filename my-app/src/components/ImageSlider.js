@@ -12,6 +12,7 @@ function Slider({ apto }) {
   const length = idnow[0].pictures.length
   const showArrows = length > 1
 
+  // && showArrows true or false 
   return (
     <div className="slider">
       {idnow.map((apto) => (

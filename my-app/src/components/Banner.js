@@ -7,6 +7,9 @@ import banner3 from "../images/banner3.png"
 import "../styles/Banner.css"
 
 function Banner() {
+
+  //utilisation Hook useEffect et useLocation pour detecter la page active
+  
   const location = useLocation()
 
   useEffect(() => {
