@@ -1,90 +1,87 @@
 .Banner {
   display: flex;
   width: 80%;
-	border-radius: 10px;
+  border-radius: 10px;
   height: 170px;
   margin: auto;
   margin-top: 10px;
   background: black;
   position: relative;
-  }
+}
 
-  .Banner2 {
-    display: flex;
-    width: 80%;
-    border-radius: 10px;
-    height: 170px;
-    margin: auto;
-    margin-top: 10px;
-    background: black;
-    position: relative;
-    }  
+.Banner2 {
+  display: flex;
+  width: 80%;
+  border-radius: 10px;
+  height: 170px;
+  margin: auto;
+  margin-top: 10px;
+  background: black;
+  position: relative;
+}
 
-    .Banner3 {
-      display: none;
-      width: 80%;
-      margin: auto;
-      border-radius: 10px;
-      }
+.Banner3 {
+  display: none;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+}
 
-      .Banner4 {
-        display: none;
-        width: 80%;
-        margin: auto;
-        border-radius: 10px;
-        }
+.Banner4 {
+  display: none;
+  width: 80%;
+  margin: auto;
+  border-radius: 10px;
+}
 
-  .img {
-      width: 100%;
-      border-radius: 10px;
-      opacity: .6  
-    }
+.img {
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0.6;
+}
 
-  .img2 {
-      width: 100%;
-      border-radius: 10px
-    }
+.img2 {
+  width: 100%;
+  border-radius: 10px;
+}
 
 .text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   margin: 0;
 }
 
-  @media (max-width: 500px) {
-    .Banner {
-      display: flex;
-      height: 70px;
-    }  
+@media (max-width: 500px) {
+  .Banner {
+    display: flex;
+    height: 70px;
+  }
 
-    .text {
+  .text {
     display: flex;
     width: 60%;
     font-size: 15px;
-    text-align:start
-    }
+    text-align: start;
+  }
 
-    .img2 {
-      display: flex;
-      object-fit: contain;
-    }
-    
-    .Banner2 {   
-      display: none;
+  .img2 {
+    display: flex;
+    object-fit: contain;
+  }
 
-  } 
+  .Banner2 {
+    display: none;
+  }
   .Banner3 {
     display: flex;
     width: 80%;
     margin: auto;
     border-radius: 10px;
-    }
-    
   }
-  
+}

@@ -1,9 +1,9 @@
-import Apto from '../components/Apto';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Apto from "../components/Apto"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 function Aptoid() {
-  const showFooter = false;
+  const showFooter = false
 
   return (
     <header>
@@ -11,7 +11,7 @@ function Aptoid() {
       <Apto />
       {showFooter ? <Footer /> : null}
     </header>
-  );
+  )
 }
 
-export default Aptoid;
+export default Aptoid

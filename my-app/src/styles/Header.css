@@ -1,27 +1,26 @@
 .header {
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-	  height: 68px;
-    margin: auto;
-    justify-content:space-between;
-    margin-top: 20px;
-    border: solid 0px red;
-}  
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 68px;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: solid 0px red;
+}
 
 .logo {
   width: 150px;
   margin: 10px;
 }
 
-  @media (max-width: 450px) {
-    .header {
-      flex: 100%;
-    }
-    
-    .logo {
-      display: flex;
-      width: 75px;
-    }
+@media (max-width: 450px) {
+  .header {
+    flex: 100%;
   }
-  
+
+  .logo {
+    display: flex;
+    width: 75px;
+  }
+}

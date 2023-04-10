@@ -1,26 +1,25 @@
 .linkpage {
-    display: flex;
-    margin: 10px;
-}  
+  display: flex;
+  margin: 10px;
+}
 
 .space {
   display: flex;
   margin: 10px;
-}  
+}
 
 .textcolor {
   font-family: Montserrat;
   font-size: 20px;
-  color: #FF6060;
+  color: #ff6060;
   text-decoration: none;
-}  
+}
 
 .active {
-  border-bottom: 1px solid #FF6060;
+  border-bottom: 1px solid #ff6060;
 }
 
 @media (max-width: 500px) {
-
   .textcolor {
     display: flex;
     font-size: 10px;
@@ -28,5 +27,5 @@
 
   .space {
     margin: 5px;
-  }  
+  }
 }

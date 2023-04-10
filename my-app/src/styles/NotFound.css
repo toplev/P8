@@ -1,40 +1,38 @@
 .NotFound {
-    width: 80%;
-	border-radius: 10px;
-    display: block;
-	height: 68px;
-    top: 40px;
-    margin: auto;
-}  
+  width: 80%;
+  border-radius: 10px;
+  display: block;
+  height: 68px;
+  top: 40px;
+  margin: auto;
+}
 
 .NotFound404 {
-    display: block;
-    margin: auto;
-    font-size: 288px;
-    text-align: center;
-    color:  #FF6060;
-}  
+  display: block;
+  margin: auto;
+  font-size: 288px;
+  text-align: center;
+  color: #ff6060;
+}
 
 .NotFoundText {
-    display: block;
-    font-size: 18px;
-    text-align: center;
-    color:  #FF6060;
-}  
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  color: #ff6060;
+}
 
 .NotFoundTextRetour {
-    display: block;
-    font-size: 18px;
-    text-align: center;
-    margin-top: 5cm;
-    color:  #FF6060;
-}  
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 5cm;
+  color: #ff6060;
+}
 
 @media (max-width: 500px) {
-
-    .NotFound404 {
-        margin-top: 20px;
-        font-size: 100px;
-    }  
-
+  .NotFound404 {
+    margin-top: 20px;
+    font-size: 100px;
+  }
 }
